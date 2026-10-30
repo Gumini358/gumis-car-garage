@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gumis Car Garage</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>🚗 Gumis Car Garage</h1>
+        <p>Din personlige bilgarasje</p> 
+
+<button id="theme-toggle" type="button">
+    🌙 Mørk modus
+</button>
+
+    </header>
+
+    <main>
+        
+<section class="garage">
+    <h2>Velkommen til din garasje!</h2>
+    <p>Her kan du legge til, se og fjerne biler.</p>
+
+    <!-- Skjema for å legge til en bil -->
+    <form id="car-form">
+
+        <label for="brand">Bilmerke:</label>
+        <input type="text" id="brand"
+               placeholder="F.eks. Toyota" required>
+
+        <label for="model">Modell:</label>
+        <input type="text" id="model"
+               placeholder="F.eks. Prius" required>
+
+        <label for="year">Årsmodell:</label>
+        <input type="number" id="year"
+               placeholder="F.eks. 2020"
+               min="1900" max="2027" required>
+
+        <button type="submit">Legg til bil 🚗</button>
+
+    </form>
+
+    
+<!-- Søk etter biler -->
+<h2>Mine biler</h2>
+
+<!-- Viser antall biler i garasjen -->
+<p id="car-count">Antall biler: 0</p>
+
+
+<label for="search-car">Søk etter bil:</label>
+<input
+    type="text"
+    id="search-car"
+    placeholder="Søk etter merke eller modell..."
+>
+
+<!-- Her vises bilene med JavaScript -->
+<div id="car-list"></div>
+
+
+</section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Gumis Car Garage</p>
+    </footer>
+
+</body>
+</html>
